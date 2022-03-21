@@ -13,9 +13,9 @@ namespace Tutorial
         protected void Page_Load(object sender, EventArgs e)
         {
             //Services.Login.CreateUser();
-            //Services.Login.ReadUser();
+            Services.Login.ReadUser();
             //Services.Login.UpdateUser(1);
-            Services.Login.DeleteUser(1);
+            //Services.Login.DeleteUser(1);
         }
     }
 }

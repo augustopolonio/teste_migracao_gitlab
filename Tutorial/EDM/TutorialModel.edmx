@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="TUTORIALModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="TUTORIALModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="USUARIOS">
           <Key>
             <PropertyRef Name="ID" />
@@ -19,7 +19,8 @@
         <EntityContainer Name="TUTORIALModelStoreContainer">
           <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="TUTORIALModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -34,7 +35,7 @@
           <Property Name="DATA_NASCIMENTO" Type="DateTime" Precision="0" />
           <Property Name="DATA_EXCLUSAO" Type="DateTime" Precision="3" />
         </EntityType>
-        <EntityContainer Name="TUTORIALEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="TutorialEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="USUARIOS" EntityType="Self.USUARIOS" />
         </EntityContainer>
       </Schema>
@@ -42,7 +43,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="TUTORIALModelStoreContainer" CdmEntityContainer="TUTORIALEntities">
+        <EntityContainerMapping StorageEntityContainer="TUTORIALModelStoreContainer" CdmEntityContainer="TutorialEntities">
           <EntitySetMapping Name="USUARIOS">
             <EntityTypeMapping TypeName="TUTORIALModel.USUARIOS">
               <MappingFragment StoreEntitySet="USUARIOS">

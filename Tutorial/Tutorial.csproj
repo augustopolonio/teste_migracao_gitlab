@@ -79,23 +79,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="index.aspx" />
-    <Content Include="Services\Login.svc" />
-    <Content Include="TutorialModel.Context.tt">
+    <Content Include="EDM\TutorialModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TutorialModel.edmx</DependentUpon>
       <LastGenOutput>TutorialModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="TutorialModel.tt">
+    <Content Include="EDM\TutorialModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>TutorialModel.edmx</DependentUpon>
       <LastGenOutput>TutorialModel.cs</LastGenOutput>
     </Content>
+    <Content Include="index.aspx" />
+    <Content Include="Services\Login.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EDM\TutorialModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TutorialModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\TutorialModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TutorialModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\TutorialModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TutorialModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EDM\USUARIOS.cs">
+      <DependentUpon>TutorialModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,34 +126,16 @@
     <Compile Include="Services\Login.svc.cs">
       <DependentUpon>Login.svc</DependentUpon>
     </Compile>
-    <Compile Include="TutorialModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TutorialModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TutorialModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="USUARIOS.cs">
-      <DependentUpon>TutorialModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <EntityDeploy Include="TutorialModel.edmx">
+    <EntityDeploy Include="EDM\TutorialModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>TutorialModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="TutorialModel.edmx.diagram">
+    <Content Include="EDM\TutorialModel.edmx.diagram">
       <DependentUpon>TutorialModel.edmx</DependentUpon>
     </Content>
+    <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

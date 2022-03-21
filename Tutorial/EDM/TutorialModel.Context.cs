@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tutorial
+namespace Tutorial.EDM
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TUTORIALEntities : DbContext
+    public partial class TutorialEntities : DbContext
     {
-        public TUTORIALEntities()
-            : base("name=TUTORIALEntities")
+        public TutorialEntities()
+            : base("name=TutorialEntities")
         {
         }
     

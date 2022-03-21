@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tutorial
+namespace Tutorial.EDM
 {
     using System;
     using System.Collections.Generic;
