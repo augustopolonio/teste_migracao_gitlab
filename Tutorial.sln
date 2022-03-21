@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.1525
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial", "Tutorial\Tutorial.csproj", "{EDDA5384-E172-4CEB-9506-CC6307BF6E5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{946875F9-F5BC-4D55-B0C1-6742E8FCB4A2} = {946875F9-F5BC-4D55-B0C1-6742E8FCB4A2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutorialAPI", "TutorialAPI\TutorialAPI.csproj", "{946875F9-F5BC-4D55-B0C1-6742E8FCB4A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{EDDA5384-E172-4CEB-9506-CC6307BF6E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDDA5384-E172-4CEB-9506-CC6307BF6E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDDA5384-E172-4CEB-9506-CC6307BF6E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946875F9-F5BC-4D55-B0C1-6742E8FCB4A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946875F9-F5BC-4D55-B0C1-6742E8FCB4A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946875F9-F5BC-4D55-B0C1-6742E8FCB4A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946875F9-F5BC-4D55-B0C1-6742E8FCB4A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
