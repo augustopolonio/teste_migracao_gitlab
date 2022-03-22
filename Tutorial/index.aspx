@@ -7,10 +7,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            Hello World
-        </div>
-    </form>
+    <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+    <script id="microloader" data-app="f7fb861e-3350-4d8f-b1cf-fd29ab0b0c9d" type="text/javascript" src="bootstrap.js"></script>
 </body>
 </html>

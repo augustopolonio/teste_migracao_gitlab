@@ -79,9 +79,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\Application.js" />
+    <Content Include="app\model\Base.js" />
+    <Content Include="app\model\Personnel.js" />
+    <Content Include="app\store\Personnel.js" />
+    <Content Include="app\view\main\List.js" />
+    <Content Include="app\view\main\Main.js" />
+    <Content Include="app\view\main\MainController.js" />
+    <Content Include="app\view\main\MainModel.js" />
     <Content Include="Connected Services\UsuariosSR\Tutorial.UsuariosSR.USUARIOS.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="app\Application.scss" />
+    <Content Include="app\view\main\Main.scss" />
     <None Include="Connected Services\UsuariosSR\Usuarios.disco" />
     <None Include="Connected Services\UsuariosSR\configuration91.svcinfo" />
     <None Include="Connected Services\UsuariosSR\configuration.svcinfo" />
