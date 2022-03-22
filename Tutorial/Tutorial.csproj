@@ -89,16 +89,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="EDM\TutorialModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TutorialModel.edmx</DependentUpon>
-      <LastGenOutput>TutorialModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="EDM\TutorialModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TutorialModel.edmx</DependentUpon>
-      <LastGenOutput>TutorialModel.cs</LastGenOutput>
-    </Content>
     <Content Include="index.aspx" />
     <Content Include="Services\Login.svc" />
     <Content Include="Web.config">
@@ -110,24 +100,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="EDM\TutorialModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EDM\TutorialModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EDM\TutorialModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TutorialModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="EDM\USUARIOS.cs">
-      <DependentUpon>TutorialModel.tt</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -143,13 +115,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="EDM\TutorialModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TutorialModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="EDM\TutorialModel.edmx.diagram">
-      <DependentUpon>TutorialModel.edmx</DependentUpon>
-    </Content>
     <None Include="Connected Services\UsuariosSR\Usuarios.wsdl" />
     <None Include="Connected Services\UsuariosSR\Usuarios.xsd">
       <SubType>Designer</SubType>
