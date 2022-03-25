@@ -15,7 +15,8 @@ Ext.define('Tutorial.view.main.Main', {
 
         'Tutorial.view.main.MainController',
         'Tutorial.view.main.MainModel',
-        'Tutorial.view.main.List'
+        'Tutorial.view.main.List',
+        'Tutorial.view.main.Users'
     ],
 
     controller: 'main',
@@ -76,18 +77,20 @@ Ext.define('Tutorial.view.main.Main', {
 
     items: [{
         title: 'Home',
-        iconCls: 'fa-home',
-        // The following grid shares a store with the classic version's grid as well!
-        items: [{
-            xtype: 'mainlist'
-        }]
-    }, {
-        title: 'Users',
-        iconCls: 'fa-user',
+        iconCls: 'fa-home',        
         bind: {
             html: '{loremIpsum}'
         }
-    }, {
+    },
+        {
+        title: 'Users',
+        iconCls: 'fa-user',
+        // The following grid shares a store with the classic version's grid as well!
+        items: [{
+            xtype: 'users'
+        }]        
+        },
+        {
         title: 'Groups',
         iconCls: 'fa-users',
         bind: {
@@ -96,8 +99,12 @@ Ext.define('Tutorial.view.main.Main', {
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        //bind: {
+        //    html: '{loremIpsum}'
+        //}
+        // The following grid shares a store with the classic version's grid as well!
+        items: [{
+            xtype: 'mainlist'
+        }] 
     }]
 });

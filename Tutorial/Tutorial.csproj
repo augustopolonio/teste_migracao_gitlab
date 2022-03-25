@@ -79,10 +79,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app.js" />
     <Content Include="app\Application.js" />
     <Content Include="app\model\Base.js" />
+    <Content Include="app\model\Users.js" />
     <Content Include="app\model\Personnel.js" />
+    <Content Include="app\store\Users.js" />
     <Content Include="app\store\Personnel.js" />
+    <Content Include="app\view\main\Users.js" />
     <Content Include="app\view\main\List.js" />
     <Content Include="app\view\main\Main.js" />
     <Content Include="app\view\main\MainController.js" />
@@ -92,6 +96,7 @@
     </Content>
     <Content Include="app\Application.scss" />
     <Content Include="app\view\main\Main.scss" />
+    <Content Include="app.json" />
     <None Include="Connected Services\UsuariosSR\Usuarios.disco" />
     <None Include="Connected Services\UsuariosSR\configuration91.svcinfo" />
     <None Include="Connected Services\UsuariosSR\configuration.svcinfo" />
@@ -100,6 +105,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="index.aspx" />
+    <Content Include="Services\AuthService.asmx" />
     <Content Include="Services\Login.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -119,6 +125,10 @@
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AuthService.asmx.cs">
+      <DependentUpon>AuthService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Services\ILogin.cs" />
     <Compile Include="Services\Login.svc.cs">
       <DependentUpon>Login.svc</DependentUpon>
