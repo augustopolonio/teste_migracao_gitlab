@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 
 namespace Tutorial.Services
@@ -11,7 +12,13 @@ namespace Tutorial.Services
     [ServiceContract]
     public interface ILogin
     {
-        [OperationContract]
+        //[OperationContract]
+        [OperationContract(IsOneWay = false)]
+        [WebGet(
+            //Method = "GET",
+            UriTemplate = "/dowork",
+            RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json)]
         void DoWork();
     }
 }
