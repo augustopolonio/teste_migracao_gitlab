@@ -25,3 +25,4 @@ Ext.define('Tutorial.Application', {
         );
     }
 });
+//Teste de conflito git (criado na master)
