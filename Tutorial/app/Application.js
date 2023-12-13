@@ -25,3 +25,5 @@ Ext.define('Tutorial.Application', {
         );
     }
 });
+//Teste de conflito (código adicionado na branch teste1)
+//Teste acentuação
